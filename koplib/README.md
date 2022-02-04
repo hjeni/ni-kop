@@ -90,13 +90,9 @@ dataframe = experiment_multi(experiment)
 
 Plotting objective value at every step of the solving process. Only works for iterative solvers. 
 
-```
-import matplotlib.pyplot as plt
-
+```python
 solver.solve(*instance_example)
-history = [x.objective for x in solver.history()]
-plt.plot(history)
-plt.show()
+solver.inspect()
 ```
 
 <hr/>
